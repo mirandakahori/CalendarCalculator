@@ -45,13 +45,13 @@
 
 # Calendar Calculator
 
-## 1. Basic Functionality "General Mode"
+## 1. Basic Function "General Mode"
 - Perform arithmetic calculations ( +, -, ×, ÷ )
-- Use the "AC" and "C" buttons to clear the display
+- Use the "AC" and "C" buttons to clear or delete the display
 - Click the "General Mode History" button to view the history list
 - Use the "Clear All" button in the General Mode History to delete all history
 
-## 2. Original Functionality "Date Mode"
+## 2. Original Function "Date Mode"
 - Calculate specific dates and weekdays
 - Click the @ button to switch between "General Mode" and "Date Mode"
 - Click the "Date Mode History" button to view the history list
@@ -66,7 +66,7 @@
     - @ -7759 = 20240921.Sat/20030625.Wed  
     **Result**: 7759 days before today (Saturday, September 21, 2024) is June 25, 2003, which is a Wednesday.
 
-### Understanding Calculation Results
+### How to read Calculation Results
 - **When was the calculation made**: First value = 20240921.Sat/～ ⇒ "Calculated on September 21, 2024"
 - **How many days later or earlier**: -365 (365 days earlier) / +365 (365 days later)  Example: @-7674 → Calculate the date and weekday 7674 days before today.
 
