@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <!-- 角丸にしたい場合 -->
+    <corners android:radius="50dp"/>
+<!--    <size android:width="64dp" android:height="40dp" />-->
+</shape>
+

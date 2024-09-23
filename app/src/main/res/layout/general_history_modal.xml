@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnCloseGeneralModal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:contentDescription="閉じる"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_general"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/generalHistoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnClearGeneralHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="すべて消去"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:padding="18dp"
+        android:layout_margin="20dp"/>
+</LinearLayout>

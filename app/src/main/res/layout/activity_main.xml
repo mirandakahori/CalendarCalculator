@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- モード表示用のTextView -->
+    <TextView
+        android:id="@+id/modeIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mode_general"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+    android:background="@color/gray"
+    android:padding="8dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_gravity="end"
+        android:padding="16dp"
+        android:text="0" />
+    </HorizontalScrollView>
+</RelativeLayout>
+
+
+    <!-- ボタンの配置 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="1dp"
+        android:layout_marginTop="10dp">
+
+        <!-- ボタンの一行目 -->
+        <Button
+            android:id="@+id/btnAt"
+            style="@style/AtButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="@"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/btnAC"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="AC"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnC"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="C"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="×"
+            android:background="@drawable/rounded_button" />
+        <!-- 2行目 -->
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="7"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="8"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="9"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="÷"
+            android:background="@drawable/rounded_button" />
+        <!-- 3行目 -->
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="4"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="5"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="6"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="+"
+            android:background="@drawable/rounded_button" />
+        <!-- 4行目 -->
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="1"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="2"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="3"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="−"
+            android:background="@drawable/rounded_button" />
+
+        <!-- 5行目 -->
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_margin="6dp"
+            android:text="0"
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="."
+            android:background="@drawable/rounded_button" />
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/OtherButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:text="="
+            android:background="@drawable/rounded_button" />
+    </GridLayout>
+    <!-- 履歴確認ボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnShowGeneralHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/history_general"
+            android:layout_margin="6dp"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btnShowDateHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/history_date"
+            android:layout_margin="6dp"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue3"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

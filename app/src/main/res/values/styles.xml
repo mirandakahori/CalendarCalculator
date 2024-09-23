@@ -1,0 +1,20 @@
+<resources>
+    <!-- UIコンポーネント用のスタイル定義 -->
+    <style name="BaseButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CalcButton" parent="BaseButtonStyle">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+    <style name="OtherButtonStyle" parent="BaseButtonStyle">
+        <item name="backgroundTint">@color/blue2</item>
+    </style>
+    <style name="AtButtonStyle" parent="BaseButtonStyle">
+        <item name="backgroundTint">@color/blue3</item>
+    </style>
+</resources>

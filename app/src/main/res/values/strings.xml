@@ -1,0 +1,9 @@
+
+<resources>
+<string name="app_name">kadai05_PI12_02</string>
+<string name="history_date">日付モード 履歴</string>
+<string name="history_general">一般モード 履歴</string>
+<string name="mode_general">一般モード</string>
+    <string name="mode_date">日付モード</string>
+<string name="btn_reset">すべて削除する</string>
+</resources>
